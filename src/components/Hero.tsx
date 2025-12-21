@@ -224,7 +224,7 @@ export function Hero() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={scrollToContact}
-              className="px-8 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300"
+              className="px-8 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 cursor-pointer"
             >
               Get In Touch
             </motion.button>
@@ -235,9 +235,15 @@ export function Hero() {
       <motion.div
         animate={{ y: [0, 10, 0] }}
         transition={{ duration: 2, repeat: Infinity }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 cursor-pointer"
+        onClick={() => {
+          const aboutSection = document.getElementById('about');
+          if (aboutSection) {
+            aboutSection.scrollIntoView({ behavior: 'smooth' });
+          }
+        }}
       >
-        <ArrowDown className="text-slate-400" size={32} />
+        <ArrowDown className="text-slate-400 hover:text-cyan-400 transition-colors" size={32} />
       </motion.div>
     </section>
   );
