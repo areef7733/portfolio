@@ -1,14 +1,13 @@
-import { motion } from "motion/react";
+import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { useInView } from "../hooks/useInView";
 import { Mail, Github, Linkedin, Send, CheckCircle2 } from "lucide-react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 
 export function Contact() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px 0px -100px 0px" });
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -37,15 +36,15 @@ export function Contact() {
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/shaikareef",
-      href: "https://github.com",
+      value: "github.com/areef7733",
+      href: "https://github.com/areef7733",
       color: "text-purple-400",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/shaikareef",
-      href: "https://linkedin.com",
+      value: "linkedin.com/in/areef77",
+      href: "https://www.linkedin.com/in/areef77/",
       color: "text-cyan-400",
     },
   ];

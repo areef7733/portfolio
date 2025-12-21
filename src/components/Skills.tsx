@@ -1,7 +1,6 @@
-import { motion } from "motion/react";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { useInView } from "../hooks/useInView";
-import { Code2, Database, Wrench, CheckCircle2 } from "lucide-react";
+import { Code2, Database, Wrench } from "lucide-react";
 
 export function Skills() {
   const ref = useRef(null);

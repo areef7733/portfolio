@@ -1,17 +1,16 @@
-import { motion } from "motion/react";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { useInView } from "../hooks/useInView";
 import { Building2, TrendingUp, Users, Zap, Award } from "lucide-react";
 
 export function Experience() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px 0px -100px 0px" });
 
   const experiences = [
     {
       title: "React Developer",
       company: "Wipro Technologies",
-      period: "Sep 2022 - Present",
+      period: "Sep 2022 - Aug 2024",
       description: "Leading front-end development for payment processing systems, focusing on performance optimization and user experience.",
       keyAchievements: [
         {

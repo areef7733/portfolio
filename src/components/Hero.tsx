@@ -1,4 +1,4 @@
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { ArrowDown, Github, Linkedin, Mail, Code, Terminal, Laptop } from "lucide-react";
 import { useState, useEffect } from "react";
 
@@ -197,7 +197,7 @@ export function Hero() {
                 <Mail size={20} />
               </motion.a>
               <motion.a
-                href="https://github.com"
+                href="https://github.com/areef7733"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -5 }}
@@ -207,7 +207,7 @@ export function Hero() {
                 <Github size={20} />
               </motion.a>
               <motion.a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/areef77/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -5 }}
