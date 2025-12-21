@@ -65,8 +65,8 @@ export function Contact() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/areef77",
-      href: "https://www.linkedin.com/in/areef77/",
+      value: "linkedin.com/in/areef7733",
+      href: "https://www.linkedin.com/in/areef7733/",
       color: "text-cyan-400",
     },
   ];
@@ -236,7 +236,7 @@ export function Contact() {
             className="text-center mt-20 pt-8 border-t border-slate-700"
           >
             <p className="text-slate-400">
-              Designed & Built by Shaik Areef
+              Designed & Built by Areef Shaik
             </p>
             <p className="text-slate-500 text-sm mt-2">
               © 2025 All rights reserved.

@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 export function Hero() {
   const [displayedText, setDisplayedText] = useState("");
-  const fullName = "Shaik Areef";
+  const fullName = "Areef Shaik";
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
   const typingSpeed = 150;
@@ -207,7 +207,7 @@ export function Hero() {
                 <Github size={20} />
               </motion.a>
               <motion.a
-                href="https://www.linkedin.com/in/areef77/"
+                href="https://www.linkedin.com/in/areef7733/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.1, y: -5 }}

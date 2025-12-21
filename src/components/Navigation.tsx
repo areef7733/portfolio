@@ -54,7 +54,7 @@ export function Navigation() {
             whileHover={{ scale: 1.05 }}
             className="text-xl md:text-2xl text-white cursor-pointer"
           >
-            Shaik Areef
+            Areef Shaik
           </motion.a>
 
           {/* Desktop Navigation */}
