@@ -8,7 +8,7 @@ export function Education() {
 
   const education = [
     {
-      degree: "Master's Program",
+      degree: "Master's in Computer Science",
       institution: "St Francis College",
       period: "Jan 2025 - May 2026",
       grade: "CGPA: 4.00",
