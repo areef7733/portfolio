@@ -139,7 +139,7 @@ export function Experience() {
                 </div>
 
                 {/* Responsibilities & Technologies */}
-                <div className="p-6 flex">
+                <div className="p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
                   {/* Responsibilities */}
                   <div className="flex-2">
                     <h4 className="text-white mb-3">Key Responsibilities</h4>
