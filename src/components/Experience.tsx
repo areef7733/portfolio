@@ -39,10 +39,10 @@ export function Experience() {
       ],
     },
     {
-      title: "Product Inventory Developer",
+      title: "Frontend Developer",
       company: "BRN Infotech",
       period: "Mar 2022 - Aug 2022",
-      description: "Built a full-stack product inventory management system with real-time updates and analytics.",
+      description: "Developed modular React.js front-end applications with real-time updates, analytics dashboards, and user behavior tracking.",
       keyAchievements: [
         {
           icon: Award,
