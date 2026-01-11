@@ -17,7 +17,7 @@ export function Skills() {
       category: "Backend & Database",
       icon: Database,
       color: "from-emerald-500 to-teal-500",
-      skills: ["Node.js", "MongoDB", "SQL", "REST APIs", "JWT Authentication", "WebSocket"],
+      skills: ["Node.js","Express.js","MongoDB", "SQL", "REST APIs", "Java","JWT Authentication", "WebSocket"],
     },
     {
       category: "Tools & Practices",

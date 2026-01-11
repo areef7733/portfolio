@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail, Code, Terminal, Laptop } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Code, Terminal, Laptop, Download } from "lucide-react";
 import { useState, useEffect } from "react";
 
 export function Hero() {
@@ -217,17 +217,31 @@ export function Hero() {
                 <Linkedin size={20} />
               </motion.a>
             </motion.div>
-            <motion.button
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.7 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              onClick={scrollToContact}
-              className="px-8 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 cursor-pointer"
-            >
-              Get In Touch
-            </motion.button>
+            <div className="flex flex-row items-center justify-center gap-4 w-auto mx-auto">
+              <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.7 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-6 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 cursor-pointer flex items-center gap-2 w-auto"
+                onClick={() => window.open('https://drive.google.com/file/d/1DeNWHNwbMw436e07cFSUI2G0ysdLVGfi/view?usp=sharing', '_blank')}
+              >
+                <Download size={18} />
+                <span>Resume</span>
+              </motion.button>
+              <motion.button
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.7 }}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={scrollToContact}
+                className="px-8 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 cursor-pointer w-auto"
+              >
+                Get In Touch
+              </motion.button>
+            </div>
           </motion.div>
         </div>
       </div>

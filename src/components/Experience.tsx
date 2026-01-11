@@ -31,11 +31,11 @@ export function Experience() {
       ],
       technologies: ["React", "Redux", "JavaScript", "REST APIs", "Payment Gateways"],
       responsibilities: [
-        "Implemented responsive payment processing interfaces",
-        "Collaborated with back-end developers for real-time data sync",
-        "Optimized front-end codebase for better performance",
+        "Built enterprise frontend applications using Angular (Lazy Loading, Feature Modules, Route Guards) and React.js, improving scalability and initial load performance by 35%.",
+        "Implemented Lazy Loading and Module Federation to optimize bundle size and improve first contentful paint by 30%.",
+        "Applied RBAC, secure routing, session handling, and input validation, reducing security vulnerabilities by 40%.",
+        "Optimized UI performance using OnPush change detection, trackBy, and memoization, cutting unnecessary DOM updates by 25%.",
         "Mentored junior developers on React best practices",
-        "Integrated multiple payment gateways seamlessly",
       ],
     },
     {
@@ -62,11 +62,10 @@ export function Experience() {
       ],
       technologies: ["React.js", "Node.js", "MongoDB", "WebSocket", "JWT"],
       responsibilities: [
-        "Developed web application with complete CRUD operations",
-        "Designed dynamic bar graphs for product insights",
-        "Implemented JWT authentication for secure access",
-        "Integrated WebSocket for real-time updates",
-        "Built customizable product view features",
+        "Developed modular UIs using React.js (Hooks, Context API), improving responsiveness by 25%.",
+        "Integrated analytics plugins and interactive dashboards to visualize user behavior and insights, increasing analytical visibility by 30%.",
+        "Implemented WebSocket-based real-time updates, reducing manual refresh actions by 40%.",
+        "Applied code splitting and memoization, improving runtime performance by 25%.",
       ],
     },
   ];
@@ -140,9 +139,9 @@ export function Experience() {
                 </div>
 
                 {/* Responsibilities & Technologies */}
-                <div className="p-6 grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <div className="p-6 flex">
                   {/* Responsibilities */}
-                  <div>
+                  <div className="flex-2">
                     <h4 className="text-white mb-3">Key Responsibilities</h4>
                     <ul className="space-y-2">
                       {exp.responsibilities.map((resp, respIndex) => (
@@ -161,7 +160,7 @@ export function Experience() {
                   </div>
 
                   {/* Technologies */}
-                  <div>
+                  <div className="flex-1">
                     <h4 className="text-white mb-3">Technologies Used</h4>
                     <div className="flex flex-wrap gap-2">
                       {exp.technologies.map((tech, techIndex) => (
