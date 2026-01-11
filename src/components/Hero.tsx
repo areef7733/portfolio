@@ -225,7 +225,7 @@ export function Hero() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="px-6 py-3 bg-transparent border-2 border-cyan-400 text-cyan-400 rounded-lg hover:bg-cyan-400 hover:text-slate-900 transition-all duration-300 cursor-pointer flex items-center gap-2 w-auto"
-                onClick={() => window.open('https://drive.google.com/file/d/1DeNWHNwbMw436e07cFSUI2G0ysdLVGfi/view?usp=sharing')}
+                onClick={() => window.open('https://drive.google.com/file/d/1DeNWHNwbMw436e07cFSUI2G0ysdLVGfi/view?usp=sharing', '_blank')}
               >
                 <Download size={18} />
                 <span>Resume</span>
